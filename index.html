@@ -158,10 +158,6 @@
         text-decoration: underline;
       }
 
-      #translate ~ label .stop {
-        text-decoration: none;
-      }
-
       #translate ~ .en {
         opacity: 0;
         transition: opacity 0.3s;
@@ -182,32 +178,17 @@
         transition: opacity 0.3s;
       }
 
-      .stop2 {
-        display: none;
-      }
-
       @media print {
-        #translate ~ label {
+        .en {
           position: relative !important;
           display: inline !important;
           text-decoration: none !important;
           opacity: 1 !important;
+          font-style: normal !important;
         }
 
-        .en::before {
-          content: " (";
-        }
-
-        .en::after {
-          content: ")";
-        }
-
-        .stop {
+        .jp-eo {
           display: none !important;
-        }
-
-        .stop2 {
-          display: inline !important;
         }
       }
     </style>
@@ -228,7 +209,7 @@
           <p>I'm a <strong>software developer / engineer / programmer</strong> based in <strong>Auckland, New Zealand</strong>.</p>
           <p>My passion is to explore and learn. Programming lets me share that journey with like-minded people from all over the world.</p>
           <p>My philosophy on code is to keep things simple. Check out <a rel="noopener" target="_blank" href="http://blog.echo.sh">my blog</a> for examples of my writing and <a rel="noopener" target="_blank" href="https://github.com/echojc">GitHub</a> for my coding.</p>
-          <p>Outside of coding, I regularly jam with friends and&nbsp;<input type="checkbox" id="translate" /><label for="translate" class="jp-eo">少しな lingvaj akrobataĵoj を楽しめる<span class="stop">.</span></label><label for="translate" class="en">enjoy a bit of linguistic acrobatics<span class="stop">.</span></label><span class="stop2">.</span></p>
+          <p>Outside of coding, I regularly jam with friends and&nbsp;<input type="checkbox" id="translate" /><label for="translate" class="jp-eo">たまに少しな lingvaj akrobataĵoj を楽しめる.</label><label for="translate" class="en">enjoy a bit of linguistic acrobatics every now and then.</label></p>
         </section>
 
         <section>
