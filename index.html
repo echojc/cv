@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>cv // jonathan chow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CV">
+    <meta name="description" content="I'm a software developer / engineer / programmer currently based in Perth, Australia." />
     <meta name="author" content="Jonathan Chow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -34,9 +34,6 @@
         }
         .print {
           display: block !important;
-        }
-        #translate ~ label {
-          color: unset !important;
         }
       }
 
@@ -90,6 +87,12 @@
         font-weight: normal;
       }
 
+      h4 .location {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+      }
+
       ul.items {
         padding-left: 24px;
       }
@@ -127,9 +130,9 @@
         overflow-wrap: break-word;
       }
 
-      .scala { background-color: #dc322f; }
-      .golang { background-color: #375eab; }
-      .react { background-color: #61dafb; }
+      .scala { background-color: #dd3424; }
+      .golang { background-color: #7ad3fd; }
+      .react { background-color: #0a7ea4; }
       .akka { background-color: #0b5567; }
       .postgres { background-color: #0066a2; }
       .mysql { background-color: #00758f; }
@@ -137,64 +140,19 @@
       .php { background-color: #8892bf; }
       .coffee { background-color: #28334c; }
       .angular { background-color: #dd1b16; }
-      .cassandra { background-color: #90bd50; }
-      .docker { background-color: #1797de; }
+      .cassandra { background-color: #8dad5b; }
+      .docker { background-color: #316de6; }
       .infinidb { background-color: #95d600; }
-      .elasticsearch { background-color: #00a9e5; }
+      .elasticsearch { background-color: #fec513; }
+      .spark { background-color: #1c6991; }
       .babel { background-color: #f5da55; }
       .node { background-color: #43853d; }
       .kube { background-color: #316ce6; }
-      .typescript { background-color: #294e80; }
+      .typescript { background-color: #3078c6; }
       .c { background-color: #232323; }
+      .csharp { background-color: #9514be; }
       .ds { background-color: #476686; }
-    </style>
-    <style type="text/css">
-      #translate {
-        display: none;
-      }
-
-      #translate ~ label {
-        position: absolute;
-        display: inline-block;
-        font-style: italic;
-        cursor: pointer;
-        text-decoration: underline;
-        color: blue;
-      }
-
-      #translate ~ .en {
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      #translate ~ .jp-eo {
-        opacity: 1;
-        transition: opacity 0.3s;
-      }
-
-      #translate:checked ~ .en {
-        opacity: 1;
-        transition: opacity 0.3s;
-      }
-
-      #translate:checked ~ .jp-eo {
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      @media print {
-        .en {
-          position: relative !important;
-          display: inline !important;
-          text-decoration: none !important;
-          opacity: 1 !important;
-          font-style: normal !important;
-        }
-
-        .jp-eo {
-          display: none !important;
-        }
-      }
+      .asm { background-color: #111111; }
     </style>
   </head>
   <body>
@@ -204,23 +162,54 @@
         <h1>jonathan chow</h1>
         <span class="contacts">
           <a rel="noopener" target="_blank" href="http://blog.echo.sh">blog</a> |
-          <a rel="noopener" target="_blank" href="https://github.com/echojc">github</a> |
-          <a rel="noopener" target="_blank" href="https://twitter.com/echojc">twitter</a>
+          <a rel="noopener" target="_blank" href="https://github.com/echojc">github</a>
         </span>
       </header>
       <main>
         <section>
-          <p>I'm a <strong>software developer / engineer / programmer</strong> based in <strong>Auckland, New Zealand</strong>.</p>
-          <p>My passion is to explore and learn. Programming lets me share that journey with like-minded people from all over the world.</p>
+          <p>I'm a <strong>software developer / engineer / programmer</strong> currently based in <strong>Perth, Australia</strong>.</p>
+          <p>I love to explore, learn new things and see other people grow and discover their passions.</p>
           <p>My philosophy on code is to keep things simple. Check out <a rel="noopener" target="_blank" href="http://blog.echo.sh">my blog</a> for examples of my writing and <a rel="noopener" target="_blank" href="https://github.com/echojc">GitHub</a> for my coding.</p>
-          <p>Outside of coding, I regularly jam with friends and&nbsp;<input type="checkbox" id="translate" /><label for="translate" class="jp-eo">たまに少しな lingvaj akrobataĵoj を楽しめる.</label><label for="translate" class="en">enjoy a bit of linguistic acrobatics every now and then.</label></p>
+          <p>After 5 years in the software industry, I was called to a local Christian church, where I served the community for 5 years.</p>
+          <p>Outside of coding, I enjoy playing music, bouldering and learning about other languages and cultures.</p>
         </section>
 
         <section>
-          <h2>Work</h2>
+          <h2>Work history</h2>
 
-          <h3>HooCan, Co-founder, Sep 2016 - present</h3>
-          <h4>Local services startup</em></h4>
+          <h3>Chinese Alliance Christian Church, Associate Pastor, Jan 2023 - Apr 2024</h3>
+          <h4>Local church community <span class="location">— Auckland, NZ</span></h4>
+
+          <ul class="items">
+            <li>Oversight of the youth ministry and church-wide governance and leadership</li>
+          </ul>
+
+          <h3>Chinese Alliance Christian Church, Youth Pastor, Jan 2019 - Dec 2022</h3>
+          <h4>Local church community <span class="location">— Auckland, NZ</span></h4>
+
+          <ul class="items">
+            <li>Oversight of the youth ministry</li>
+          </ul>
+
+          <h3>Movio, Software Engineer, Mar 2017 - Mar 2018</h3>
+          <h4>Cinema analytics and marketing <span class="location">— Auckland, NZ</span></h4>
+
+          <ul class="items">
+            <li>ML-based algorithm for discovering movie preferences of cinemagoers</li>
+            <ul class="tech">
+              <li class="golang">Go</li>
+              <li class="scala">Scala</li>
+              <li class="babel">ES6</li>
+              <li class="react">React</li>
+              <li class="docker">Docker</li>
+              <li class="kube">Kubernetes</li>
+              <li class="elasticsearch">Elasticsearch</li>
+              <li class="spark">Spark</li>
+            </ul>
+          </ul>
+
+          <h3>HooCan, Co-founder, Sep 2016 - Mar 2017</h3>
+          <h4>Local services startup <span class="location">— Auckland, NZ</span></h4>
 
           <ul class="items">
             <li>Cordova-based mobile app and Go backend</li>
@@ -234,10 +223,10 @@
           </ul>
 
           <h3>Movio, Software Engineer, Jan 2013 - Sep 2016</h3>
-          <h4>Cinema analytics and marketing</h4>
+          <h4>Cinema analytics and marketing <span class="location">— Auckland, NZ</span></h4>
 
           <ul class="items">
-            <li>WYSIWYG email designer</li>
+            <li>WYSIWYG email designer for personalised content</li>
             <ul class="tech">
               <li class="babel">ES6</li>
               <li class="react">React</li>
@@ -292,6 +281,52 @@
         <section>
           <h2>Projects</h2>
           <ul class="items">
+
+            <li>Advent of Code (2021)</li>
+            <ul class="description">
+              <li><a rel="noopener" target="_blank" href="https://www.youtube.com/playlist?list=PLQXYI_PUwk7G0qvWpDxmK5MFlSlRILGXD">YouTube playlist</a></li>
+              <li>Livestreamed (first half) and recorded (second half) solving of Advent of Code 2021.</li>
+            </ul>
+            <ul class="tech">
+              <li class="golang">Go</li>
+            </ul>
+
+            <li>NZ Covid Pass Validator (2021)</li>
+            <ul class="description">
+              <li><a rel="noopener" target="_blank" href="https://github.com/echojc/nzcpv">nzcpv</a></li>
+              <li>A library to validate the NZ Covid Pass used in New Zealand during the pandemic.</li>
+            </ul>
+            <ul class="tech">
+              <li class="golang">Go</li>
+            </ul>
+
+            <li>CLI file transfer tool (2021)</li>
+            <ul class="description">
+              <li><a rel="noopener" target="_blank" href="https://github.com/echojc/sky">sky</a></li>
+              <li>A simple command-line tool to send a file over HTTP, making it easy to transfer files wirelessly between devices on the same network.</li>
+            </ul>
+            <ul class="tech">
+              <li class="golang">Go</li>
+            </ul>
+
+            <li>Advent of Code (2020)</li>
+            <ul class="description">
+              <li><a rel="noopener" target="_blank" href="https://www.youtube.com/playlist?list=PLQXYI_PUwk7G7G8j8ZxcelLsGFcIXuJ_7">YouTube playlist</a></li>
+              <li>Livestreamed solving of Advent of Code 2020.</li>
+            </ul>
+            <ul class="tech">
+              <li class="babel">JavaScript</li>
+            </ul>
+
+            <li>Flappy Bird (2019)</li>
+            <ul class="description">
+              <li><a rel="noopener" target="_blank" href="https://github.com/echojc/flappybird">flappybird</a></li>
+              <li>A remake of the classic game Flappy Bird for the Game Boy using my own assembler.</li>
+            </ul>
+            <ul class="tech">
+              <li class="asm">Assembly</li>
+            </ul>
+
             <li>Game Boy Emulator/Assembler (2016)</li>
             <ul class="description">
               <li><a rel="noopener" target="_blank" href="https://github.com/echojc/goboy">goboy</a> // <a rel="noopener" target="_blank" href="https://github.com/echojc/gbasm">gbasm</a></li>
@@ -301,23 +336,13 @@
               <li class="golang">Go</li>
             </ul>
 
-            <li>Lisp Compiler (2014)</li>
-            <ul class="description">
-              <li><a rel="noopener" target="_blank" href="https://github.com/echojc/lime/tree/old">lime</a></li>
-              <li>Clojure was the talk of the day at the time. I became fascinated enough with Lisp to prototype a compiler that produced Java class files that could run directly on the JVM.</li>
-            </ul>
-            <ul class="tech">
-              <li class="scala">Scala</li>
-              <li class="java">JVM</li>
-            </ul>
-
             <li>osu! (2009)</li>
             <ul class="description">
-              <li><a rel="noopener" target="_blank" href="http://store.ppy.sh/u/431">profile</a> // <a rel="noopener" target="_blank" href="https://github.com/echojc/osu-ds">Nintendo DS prototype</a></li>
+              <li><a rel="noopener" target="_blank" href="http://osu.ppy.sh/u/431">profile</a> // <a rel="noopener" target="_blank" href="https://github.com/echojc/osu-ds">Nintendo DS prototype</a></li>
               <li>osu! is a PC remake of the Nintendo DS game <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Osu!_Tatakae!_Ouendan">Osu! Tatakae! Ouendan</a> / <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Elite_Beat_Agents">Elite Beat Agents</a>. I contributed to parts of the website and the backend, and also tried my hand at a bit of Nintendo DS homebrew.</li>
             </ul>
             <ul class="tech">
-              <li class="c">C#</li>
+              <li class="csharp">C#</li>
               <li class="php">PHP</li>
               <li class="mysql">MySQL</li>
               <li class="c">C++</li>
@@ -349,8 +374,9 @@
         <section>
           <h2>Education</h2>
           <ul class="items">
-            <li><strong>ME in Software Engineering</strong> at University of Auckland (2012)</li>
-            <li><strong>BE in Software Engineering</strong> at University of Auckland (2009-2011)</li>
+            <li><strong>Bachelor of Applied Theology</strong> at Carey Baptist College (2022)</li>
+            <li><strong>Master of Engineering in Software Engineering</strong> at University of Auckland (2012)</li>
+            <li><strong>Bachelor of Engineering in Software Engineering</strong> at University of Auckland (2009-2011)</li>
           </ul>
         </section>
 
